@@ -1,0 +1,19 @@
+[programs.localnet]
+solana_twitter = "DeWSVxoMAW52Lz49cqSLo21FujaLAeUpJnwxrsBFUFT2"
+
+[programs.devnet]
+solana_twitter = "DeWSVxoMAW52Lz49cqSLo21FujaLAeUpJnwxrsBFUFT2"
+
+[programs.mainnet]
+solana_twitter = "DeWSVxoMAW52Lz49cqSLo21FujaLAeUpJnwxrsBFUFT2"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "mainnet"
+wallet = "/Users/oli/.config/solana/id.json"
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
+copy-idl = "mkdir -p app/idl && cp target/idl/solana_twitter.json app/idl/solana_twitter.json"

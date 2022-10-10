@@ -1,0 +1,27 @@
+{
+  "name": "solana-twitter",
+  "description": "Twitter clone built on Solana.",
+  "repository": "https://github.com/olistic/solana-twitter.git",
+  "author": "Matias Olivera <moliverafreire@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "yarn workspace @solana-twitter/app run dev",
+    "lint": "eslint --cache --ext .js . && prettier --check \"app/**/*.js\"",
+    "lint:fix": "eslint --cache --ext .js . --fix && prettier --write \"app/**/*.js\""
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.1.6",
+    "@project-serum/anchor": "^0.24.2",
+    "eslint": "^8.15.0",
+    "eslint-config-next": "^12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "mocha": "^10.0.0",
+    "prettier": "2.6.2"
+  },
+  "workspaces": [
+    "app"
+  ]
+}
